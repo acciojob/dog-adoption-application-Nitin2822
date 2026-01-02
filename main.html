@@ -1,16 +1,108 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Dog Adoption Application</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+    }
+
+    form {
+      width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    select {
+      height: 90px;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <form>
+    <h2>Dog Adoption Application</h2>
+
+    <!-- Name -->
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Name">
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <!-- Address -->
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Address">
+
+    <!-- Checkbox -->
+    <label>
+      <input 
+        type="checkbox" 
+        id="checkbox" 
+        value="Have you ever lived with a Dog before?"
+      >
+      Have you ever lived with a Dog before?
+    </label>
+
+    <!-- Multi Select -->
+    <label for="breeds">Please select your preferred breeds</label>
+    <select id="breeds" multiple>
+      <option>Labrador</option>
+      <option>German Shepherd</option>
+      <option>Golden Retriever</option>
+      <option>Beagle</option>
+    </select>
+
+    <!-- Submit -->
+    <input type="submit" id="submit" value="Submit">
+  </form>
 
 </body>
-
 </html>
